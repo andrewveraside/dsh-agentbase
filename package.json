@@ -1,0 +1,32 @@
+{
+  "name": "@local/dsh-agentbase",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "本机四端 agent（DSH / WorkBuddy / CodeBuddy / ZCode）的 MCP 与 Skill 统一盘点与开关",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "data.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

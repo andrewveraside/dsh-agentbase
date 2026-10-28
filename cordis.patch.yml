@@ -1,0 +1,5 @@
+# AgentBase 管理页：把本机四端 agent 的 MCP / Skill 收进 DSH 界面统一看、统一开关。
+- insert:
+    - id: agentbase-manager
+      name: '@local/dsh-agentbase'
+      config: {}
